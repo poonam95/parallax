@@ -1,0 +1,670 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ===
+
+   ======================================================================= */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    background-color: #282828;
+    color: #d3d3d3;
+    webkit-tap-highlight-color: #222;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.text-primary {
+    color: #9c27b0;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.icon-lg {
+    font-size: 50px;
+    line-height: 18px;
+}
+
+.icon-sm {
+    font-size: 30px;
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+}
+
+.navbar-default {
+    border-color: rgba(35,35,35,.05);
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    background-color: #222;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.navbar-header > .navbar-brand {
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    color: #9c27b0;
+    padding: 15px;
+    -webkit-transition: padding .2s ease-in;
+    -moz-transition: padding .2s ease-in;
+    transition: padding .2s ease-in;
+}
+
+.navbar-header > .navbar-brand:hover,
+.navbar-header > .navbar-brand:focus {
+    color: #8b27b0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #181818;
+}
+.navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #eee;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #9c27b0;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #9c27b0 !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover
+{
+    background-color: transparent;
+}
+
+
+.feature {
+    margin: 50px auto 0;
+    max-width: 400px;
+}
+
+@media(min-width:992px) {
+    .feature {
+        margin: 20px auto 0;
+    }
+}
+
+.feature p {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    .icon-lg {
+        font-size: 80px;
+    }
+
+     .icon-sm{
+        font-size: 40px;
+    }
+
+       section {
+        min-height: 600px;
+        
+    }
+
+}
+
+
+/*MODAL STYLES */
+
+.modal-content {
+    background-color: #1d1d1d;
+}
+
+.btn.btn-primary {
+    background-color: transparent;
+    border:1px solid #f0f0f0;
+    border-color:#f0f0f0;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    border: 0;
+    border-radius: 290px;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+}
+
+/* MODAL STYLES CLOSED */
+
+/*
+  GALLERY STYLES
+ */
+#three {
+    padding: 70px 0;
+}
+
+#one {
+    padding: 70px 0;
+}
+
+#two {
+    padding: 70px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+
+
+
+/*
+  GALLERY STYLES CLOSED
+ */
+
+ .text-faded {
+    color: rgba(245,245,245,0.7);
+}
+
+footer {
+    background-color:#2d2d2d;
+    padding: 10px;
+}
+
+.bg-primary {
+    background-color: #333;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+}
+body {
+	
+}
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+	
+	opacity: 0;
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 700px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+	.hsContent h2  {
+		color: #fff8de;
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		font-size: 35px;
+		line-height: 38px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+
+
+#slide-1 .hsContent {
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .hsContent {
+	/*margin-left: -600px;*/
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
+#slide-3 .hsContent {
+	margin-left: -239px;
+}
+	#slide-3 h2 {
+		color: #f2ead6;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-4 .hsContent {
+	margin-left: -450px;
+}
+	#slide-4 h2 {
+		background: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: transparent;
+        background-color: transparent;
+        min-height: 60px;
+    }
+
+    .navbar-header > .navbar-brand {
+        color: rgba(255,255,255,0.7);
+        padding: 19px;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #f4f4f4;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,0.8);
+        padding: 20px;
+        letter-spacing: 1.1px;
+        text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fefefe;
+    }
+
+    .navbar-default.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: #222;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 15px;
+        color: #9c27b0;
+        padding: 20px;
+        letter-spacing: 1px;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #8b27b0;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #ddd;
+        text-shadow: 1px 1px 1px rgba(30,30,30,0.7);
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #9c27b0;
+    }
+}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+a {
+    color: #9c27b0;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #9c27c1;
+    outline: 0;
+}
+
+.list-inline a:hover,
+a:focus
+{
+    color: white;
+
+}

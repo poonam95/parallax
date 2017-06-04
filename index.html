@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo - Simple parallax scrolling tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+    
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+         
+         <link rel="stylesheet" href="./css/animate.min.css" />
+         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <style type="text/css">
+			body {
+				font-family: 'Open Sans', sans-serif;
+			}
+			<style type="text/css">
+        
+      
+        #myCarousel .nav a small
+        {
+            display: block;
+        }
+        #myCarousel .nav
+        {
+            background: #eee;
+        }
+        .nav-justified > li > a
+        {
+            border-radius: 0px;
+        }
+          .nav-pills>li[data-slide-to="0"].active a { background-color: #16a085; }
+         
+         .nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
+          .nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
+           .nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
+         
+
+    </style>
+		</style>
+    </head>
+    <body class="loading">
+     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#slide-1"><i class="ion-ios-analytics-outline"></i> Let's Create</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a  class="page-scroll"  href="#one">Intro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">Highlights</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">Gallery</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#footer">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+       	
+       	<div id="preload">
+	       	<img src="img/bcg_slide-1.jpg">
+	       	<img src="img/bcg_slide-2.jpg">
+	       	<img src="img/bcg_slide-3.jpg">
+	       
+       	</div>
+       	
+       	<main>
+       	 
+	        <section id="slide-1" class="homeSlide">
+	        	<div class="bcg">
+		        	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>Let's Create a simple Parallax....</h2>
+			    		</div>
+		        	</div>
+	        	</div>
+		    </section>
+		    
+
+		      <section class="bg-primary" id="one">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+		                    <h2 class="margin-top-0 text-primary">Hello There!!</h2>
+		                    <br>
+		                    <p class="text-faded">
+		                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet tristique pretium. Sed scelerisque quam ut imperdiet feugiat. Integer eu scelerisque tortor, a gravida mi. Sed non justo vel elit consectetur dignissim. Morbi porta justo a orci ornare dictum. Vivamus sed augue nisl. Sed cursus venenatis orci, vitae aliquam lacus condimentum sit amet. Donec hendrerit nisi non volutpat vulputate. Curabitur non magna eget mi tempus posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus iaculis, nunc ut dignissim sagittis, ipsum tortor porta elit, in accumsan eros nibh non leo. In vehicula sagittis iaculis.
+		                    </p>
+		                    <a href="#three" class="btn btn-default btn-xl page-scroll">Learn More</a>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    
+		    <section id="slide-2" class="homeSlide">
+		    	<div class="bcg">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>Here goes the image......</h2>
+			    		</div>
+		        	</div>
+		    	</div>
+		    </section>
+
+		     <section id="two">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-12 text-center">
+		                    <h2 class="margin-top-0 text-primary">Layouts</h2>
+		                    <hr class="primary">
+		                </div>
+		            </div>
+		        </div>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-4 col-md-4 text-center">
+		                    <div class="feature">
+		                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
+		                        <h3>Responsive</h3>
+		                        <p class="text-muted">Your site looks good everywhere</p>
+		                    </div>
+		                </div>
+		                <div class="col-lg-4 col-md-4 text-center">
+		                    <div class="feature">
+		                        <i class="icon-lg ion-social-sass wow fadeInUp" data-wow-delay=".2s"></i>
+		                        <h3>Customizable</h3>
+		                        <p class="text-muted">Easy to theme and customize with SASS</p>
+		                    </div>
+		                </div>
+		                <div class="col-lg-4 col-md-4 text-center">
+		                    <div class="feature">
+		                        <i class="icon-lg ion-ios-star-outline wow fadeIn" data-wow-delay=".3s"></i>
+		                        <h3>Consistent</h3>
+		                        <p class="text-muted">A mature, well-tested, stable codebase</p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+
+		    <section id="slide-3" class="homeSlide">
+				<div class="bcg">
+			    	<div class="hsContainer">
+		    			<div class="hsContent">
+				    		<h2>Now go and create your own page....</h2>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+
+		     <!--GALLERY-->
+		<section id="three" >
+                
+				
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+               
+                  <img src="img/01.jpg" alt="Los Angeles" style="width:100%;">
+               
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                 <img src="img/02.jpg" alt="Chicago" style="width:100%;">
+                
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                 <img src="img/03.jpg" alt="New York" style="width:100%;">
+               
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                 <img src="img/04.jpg" alt="Chicago" style="width:100%;">
+                
+            </div>
+            <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="nav nav-pills nav-justified hidden-xs">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"><a class="hello" href="#">Los Angeles<small><br>Lorem
+                ipsum dolor sit</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#" class="hello">Chicago<small><br>Lorem ipsum
+                dolor sit</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#" class="hello">New York<small><br>Lorem ipsum
+                dolor sit</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#" class="hello">Brazil<small><br>Lorem ipsum
+                dolor sit</small></a></li>
+        </ul>
+
+         
+    </div>
+    <!-- End Carousel -->
+</div>
+        
+        </section>
+
+		    
+			
+			
+			<section id="slide-4" class="homeSlide">
+				<div class="bcg">
+			    	<div class="hsContainer">
+		    			<div class="hsContent">
+				    		<h2></h2>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+		    
+		</main>
+
+
+<!--MODAL BOX-->
+	<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Landing Zero Theme</h2>
+        		
+        		<p class="text-justify">
+        		    This is a single-page Bootstrap template with a sleek dark/grey color scheme, accent color and smooth scrolling.
+        		    There are vertical content sections with subtle animations that are activated when scrolled into view using the jQuery WOW plugin. There is also a gallery with modals
+        		    that work nicely to showcase your work portfolio. Other features include a contact form, email subscribe form, multi-column footer. Uses Questrial Google Font and Ionicons.
+        		</p>
+        		
+        		
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+        	</div>
+        </div>
+        </div>
+    </div>
+
+
+    <footer id="footer" >
+        <div class="container-fluid">
+           <h4 style="text-align: center;">Contact</h4>
+             
+                   
+                   
+                    
+                       <ul class="list-inline" style="text-align: center;">
+	                      <li><a rel="nofollow" href="" title="Twitter"><i class="icon-sm ion-social-twitter-outline"></i></a>&nbsp;</li>
+	                      <li><a rel="nofollow" href="" title="Facebook"><i class="icon-sm ion-social-facebook-outline"></i></a>&nbsp;</li>
+	                      <li><a rel="nofollow" href="" title="Dribble"><i class="icon-sm ion-social-dribbble-outline"></i></a></li>
+	                    </ul>
+                    
+                 
+              
+        </div>
+    </footer>
+
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready( function() {
+    $('#myCarousel').carousel({
+        interval:   4000
+    });
+    
+    var clickEvent = false;
+    $('#myCarousel').on('click', '.nav a', function() {
+            clickEvent = true;
+            $('.nav li').removeClass('active');
+            $(this).parent().addClass('active');        
+    }).on('slid.bs.carousel', function(e) {
+        if(!clickEvent) {
+            var count = $('.nav').children().length -1;
+            var current = $('.nav li.active');
+            current.removeClass('active').next().addClass('active');
+            var id = parseInt(current.data('slide-to'));
+            if(count == id) {
+                $('.nav li').first().addClass('active');    
+            }
+        }
+        clickEvent = false;
+    });
+});
+
+ 
+
+</script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
+           
+        
+           <script src="./js/jquery.easing.min.js"></script>
+           <script src="./js/wow.js"></script>
+           <script src="./js/scripts.js"></script>
+ 
+    </body>
+</html>
